@@ -2,7 +2,9 @@
 
 ## TODO
 
-- Write copy for About & Writing pages;
-- Find background image for site;
-- Mockup site on Figma;
 - Build out components...
+- implement figma design for landing page
+- implement about page
+- implement writing page
+- implement contact page (MVP)
+- implement contact page (form)

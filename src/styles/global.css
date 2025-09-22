@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Village";
+  src: url("../assets/fonts/village.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../assets/fonts/jetbrains-mono.ttf");
+  font-display: swap;
+}
+
+@theme {
+  --font-display: "Village", serif;
+  --font-mono: "JetBrainsMono", monospace;
+  --color-indigo-grey: #39393e;
+}
