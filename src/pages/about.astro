@@ -1,7 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import authorPhoto from '../assets/images/author-site-photo.png';
 ---
 
 <Layout>
-    <h1>About</h1>
+  <section class="flex flex-col justify-start items-center gap-12 w-full mt-56 px-12">
+    <h1 class="font-display text-xl">About</h1>
+    <img class="w-full" id="author-photo" src={authorPhoto.src} alt="" fetchpriority="high" />
+    <div class="w-full font-mono text-xs/5 text-justify">
+      <p>
+        Jack Thacker is a writer based in Bristol, UK. He studied English at the University of York and completed a PhD on modern georgic poetry at the University of Bristol.
+      </p>
+      <br />
+      <p>
+        He is the winner of the Charles Causley International Poetry Competition and has been the writer in residence at the Museum of English Rural Life and Lighthouse Arts Centre.
+      </p>
+      <br />
+      <p>
+        His poetry has appeared in magazines such as Magma, PN Review, Stand, Blackbox Manifold, The Clearing and Caught by the River and has been broadcast on BBC Radio.
+      </p>
+      <br />
+      <p>
+        His debut pamphlet-length collection is Handling, which came out with Two Rivers Press in 2018.
+      </p>
+    </div>
+  </section>
 </Layout>
