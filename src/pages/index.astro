@@ -1,11 +1,10 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Layout from "../layouts/Layout.astro";
-import reeds from '../assets/images/reeds.jpg';
+import reeds from '../assets/images/bolex-reeds-cropped.png';
 ---
 
 <Layout>
-  <Navigation />
   <div class="flex items-center justify-center h-full px-4" id="container">
     <img class="rounded-xl" id="welcome" src={reeds.src} alt="" fetchpriority="high" />
   </div>
