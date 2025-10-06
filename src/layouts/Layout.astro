@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 ---
 
@@ -10,10 +11,13 @@ import "../styles/global.css";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+    <ClientRouter>
 		<title>Jack Thacker</title>
 	</head>
 	<body class="m-0 w-full h-full bg-indigo-grey text-white">
-    <Navigation />
+    <header>
+      <Navigation />
+    </header>
 		<slot />
 	</body>
 </html>
