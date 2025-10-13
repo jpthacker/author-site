@@ -1,7 +1,30 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import coverPhoto from '../assets/images/handling-cover.jpg';
 ---
 
 <Layout>
-  <h1>Writing</h1>
+  <section class="flex flex-col justify-start items-center gap-12 w-full mt-56 pb-28 px-12">
+    <h2 class="font-display text-2xl">Writing</h2>
+    <img class="w-2/3" id="handling-cover-photo" src={coverPhoto.src} alt="" fetchpriority="high" />
+    <div class="w-full font-mono text-xs/5 text-justify">
+      <h2 class="font-mono text-xl text-center"><i>Handling</i> (Two Rivers Press, 2018)</h2>
+      <br />
+      <p>
+        ‘In the title poem of Jack Thacker’s Handling, the young speaker struggles to steer large – and stubborn – sheep. Watching his father, he realises that handling animals needs subtlety as well as strength. Both these qualities grace Jack Thacker’s poems not of surface glamour, but of depth and skill. They offer their readers rich rewards.’ 
+      </p>
+      <br />
+      <p>
+        – Alison Brackenbury
+      </p>
+      <br />
+      <p>
+        ‘On a first reading Handling is a convincing and likeable book; it takes a while to appreciate fully the quiet brilliance of this brief masterpiece, but once you do, it stays.'
+      </p>
+      <br />
+      <p>
+        – Bernard O’Donoghue
+      </p>
+    </div>
+  </section>
 </Layout>
