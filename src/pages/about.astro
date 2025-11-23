@@ -1,28 +1,50 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import authorPhoto from '../assets/images/author-site-photo.png';
+import Layout from "../layouts/Layout.astro";
+import authorPhoto from "../assets/images/author-site-photo-2.png";
 ---
 
 <Layout>
-  <section class="flex flex-col justify-start items-center gap-12 w-full mt-56 mb-28 px-12">
+  <section
+    class="flex flex-col justify-start md:justify-center items-center gap-12 w-full h-full mt-56 md:mt-0 px-12">
     <h2 class="font-display text-2xl">About</h2>
-    <img class="w-full" id="author-photo" src={authorPhoto.src} alt="" fetchpriority="high" />
-    <div class="w-full font-mono text-xs/5 text-justify">
-      <p>
-        Jack Thacker is a writer based in Bristol, UK. He studied English at the University of York and completed a PhD on modern georgic poetry at the University of Bristol.
-      </p>
-      <br />
-      <p>
-        He is the winner of the Charles Causley International Poetry Competition and has been the writer in residence at the Museum of English Rural Life and Lighthouse Arts Centre.
-      </p>
-      <br />
-      <p>
-        His poetry has appeared in magazines such as Magma, PN Review, Stand, Blackbox Manifold, The Clearing and Caught by the River and has been broadcast on BBC Radio.
-      </p>
-      <br />
-      <p>
-        His debut pamphlet-length collection is Handling, which came out with Two Rivers Press in 2018.
-      </p>
+    <div
+      class="flex flex-col md:flex-row justify-center items-center gap-6 w-full md:px-12 lg:w-[900px]">
+      <img
+        class="md:w-1/2 h-full object-cover"
+        id="author-photo"
+        src={authorPhoto.src}
+        alt=""
+        fetchpriority="high"
+      />
+      <div class="md:w-1/2 font-mono text-xs/5 text-justify">
+        <p>
+          I'm a writer based in Bristol, UK. I write poetry, short fiction and
+          essays.
+        </p>
+        <br />
+        <p>
+          My poetry has appeared in magazines such as Magma, PN Review, Stand,
+          Blackbox Manifold, The Clearing and Caught by the River and has been
+          broadcast on BBC Radio.
+        </p>
+        <br />
+        <p>
+          I was lucky enough to win the Charles Causley International Poetry
+          Competition, and I've been the writer in residence at both the Museum
+          of English Rural Life and Lighthouse Arts Centre.
+        </p>
+        <br />
+        <p>
+          My debut pamphlet-length collection is Handling, which came out with
+          Two Rivers Press in 2018.
+        </p>
+        <br />
+        <p>
+          I'm a Software Engineer by day, but before retraining in Tech I
+          studied English at the University of York and completed a PhD on
+          modern georgic poetry at the University of Bristol.
+        </p>
+      </div>
     </div>
   </section>
 </Layout>
