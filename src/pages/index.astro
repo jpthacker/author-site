@@ -1,10 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import reeds from '../assets/images/bolex-reeds-cropped.png';
+import reeds from "../assets/images/bolex-reeds-cropped.png";
 ---
 
 <Layout>
-  <div class="flex items-center justify-center h-full px-4" id="container">
-    <img class="rounded-xl" id="welcome" src={reeds.src} alt="" fetchpriority="high" />
+  <div
+    class="flex items-center justify-center min-h-screen px-4"
+    id="container">
+    <img
+      class="rounded-xl"
+      id="welcome"
+      src={reeds.src}
+      alt=""
+      fetchpriority="high"
+    />
   </div>
 </Layout>

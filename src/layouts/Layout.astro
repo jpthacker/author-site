@@ -1,23 +1,23 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import Navigation from "../components/Navigation.astro";
 import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 ---
 
 <!doctype html>
 <html lang="en" class="m-0 w-full h-full">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
     <ClientRouter>
-		<title>Jack Thacker</title>
-	</head>
-	<body class="m-0 w-full h-full bg-indigo-grey text-white">
+      <title>Jack Thacker</title>
+    </ClientRouter>
+  </head><body class="m-0 w-full bg-indigo-grey text-white">
     <header>
       <Navigation />
     </header>
-		<slot />
-	</body>
+    <slot />
+  </body>
 </html>
