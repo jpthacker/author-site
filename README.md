@@ -2,7 +2,7 @@
 
 A simple static site for my writing and publications, made using Astro and Tailwind CSS.
 
-See the hosted version at [jackthacker.co.uk](https://jackthacker.co.uk/writing/).
+See the hosted version at [jackthacker.co.uk](https://jackthacker.co.uk).
 
 ## Future improvements
 
